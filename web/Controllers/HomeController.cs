@@ -8,6 +8,14 @@ namespace web.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Login()
+        {
+            return View();
+        }
+        public ActionResult register()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View();
