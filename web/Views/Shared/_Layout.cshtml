@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - THE WORLD OF THE WATCH</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+</head>
+<body>
+
+    <nav class="header text-center">
+        <h1>THE WORLD OF THE WATCH </h1>
+        <h6 style="text-align:center "> (thương hiệu từ 1998) </h6>
+        <div class="search-bar" style="margin: 20px auto; text-align: center; max-width: 15%;">
+            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..." style="width: 100%;" />
+        </div>
+
+
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+            <div class="container">
+                @Html.ActionLink("Trang Chủ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li>@Html.ActionLink("Giỏ Hàng", "Index", "Giỏ Hàng", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Đăng Ký/Đăng Nhập", "Đăng Ký/Đăng Nhập", "Trang Chủ", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Liên Hệ", "Liên Hệ", "Giỏ Hàng", new { area = "" }, new { @class = "nav-link" })</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+        <div class="header">
+            <h1> Đồng hồ Rolex Nam </h1>
+
+        </div>
+        <div class="container main-content">
+            @RenderBody()
+        </div>
+        <div class="footer">
+            <p>&copy; @DateTime.Now.Year - My Watch Store</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        @RenderSection("scripts", required: false)
+
+        <div class="container body-content">
+
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - ĐỒNG HỒ THỜI TRANG - ĐỒNG HỒ CAO CẤP</p>
+            </footer>
+        </div>
+</body>
+</html>

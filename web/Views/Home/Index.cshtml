@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/Layout_ChoWebKhac.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-auto">
+      <a href="@Url.Action("Banner", "Watches")" style="text-decoration: none;">
+        <img src="~/image/Banner_home.png" class="img-fluid" alt="Quảng cáo" />
+        <h5 style="color: black"> chương trình áp dụng từ x/x/20xx đến x/x/20xx</h5>
+      </a>
+     </div>
+ </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <a href="@Url.Action("MenWatches", "Watches")" style="text-decoration: none;">
+                <img src="~/image/Nam_home.jpg" class="img-fluid" alt="Đồng Hồ Nam" style="width: 100%; height: auto;" />
+                <h3 style="color:black"> Đồng Hồ Nam</h3>
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="@Url.Action("WomenWatches", "Watches")" style="text-decoration: none;">
+                <img src="~/image/Nu_home.jpg" class="img-fluid" alt="Đồng Hồ Nữ" style="width: 100%; height: auto;" />
+                <h3 style="color : black"> Đồng Hồ Nữ</h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <a href="@Url.Action("CoupleWatches", "Watches")" style="text-decoration: none;">
+                <img src="~/image/Dong_Ho_DOi.jpg" class="img-fluid" alt="Đồng Hồ Đôi" />
+                <h3 style="color: black"> Đồng Hồ Đôi</h3>
+            </a>
+        </div>
+    </div>
+
+    <h1 class="center-text mt-5">Đồng Hồ Bán Chạy</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <a href="@Url.Action("ProductDetails", "Watches", new { id = 1 })" style="text-decoration: none;">
+                <img src="~/image/1.jpg" class="img-fluid" alt="Đồng Hồ 1" style="width: 100%; height: auto;" />
+                <h5>ROlEX Vàng Nguyên Khối</h5>
+                <p>Tissot Le Locle Powermatic 80 T006.407.16.033.00 – Nam – Automatic.../p>
+</a>
+        </div>
+        <div class="col-md-3">
+            <a href="@Url.Action("ProductDetails", "Watches", new { id = 2 })" style="text-decoration: none;">
+                <img src="~/image/2.jpg" class="img-fluid" alt="Đồng Hồ 2" style="width: 100%; height: auto;" />
+                <h5>ROLEX Đính Kim Cương</h5>
+                <p>Doxa Noble D173TCM – Nam – Kính Sapphire – Đính 8 Viên Kim Cương...</p>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="@Url.Action("ProductDetails", "Watches", new { id = 3 })" style="text-decoration: none;">
+                <img src="~/image/3.jpg" class="img-fluid" alt="Đồng Hồ 3" style="width: 100%; height: auto;" />
+                <h5>ROLEX Kính Sapphire</h5>
+                <p>Titoni Airmaster 83743 S-682 – Nam – Kính Sapphire – Automatic – Mặt Số...</p>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="@Url.Action("ProductDetails", "Watches", new { id = 4 })" style="text-decoration: none;">
+                <img src="~/image/4.jpg" class="img-fluid" alt="Đồng Hồ 4" style="width: 100%; height: auto;" />
+                <h5>ROLEX Cơ</h5>
+                <p>Tissot PRX Powermatic 80 T137.407.11.351.00 – Nam – Automatic...</p>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <h1 class="center-text mt-5">Các Dịch Vụ Khác</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <a href="@Url.Action("Warranty", "Services")" style="text-decoration: none;">
+                <img src="~/image/bao_hanh.jpg" class="img-fluid" alt="Bảo Hành" style="width: 100%; height: auto;" />
+                <h3>Bảo Hành</h3>
+                <h5 style="color: black">Với hơn 20 năm kinh nghiệm, chúng tôi tự hào cung cấp dịch vụ bảo hành đồng hồ chính hãng, nhanh chóng và tận tâm</h5>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Repair", "Services")" style="text-decoration: none;">
+                <img src="~/image/sua.jpg" class="img-fluid" alt="Sửa Chữa" style="width: 100%; height: auto;" />
+                <h3>Sửa Chữa</h3>
+                <h5 style="color: black">Sở Hữu đội ngũ chuyên nghiệp, chúng tôi đảm bảo sẽ "thay da đổi thịt" cho những chiếc đồng hồ của quý khách.</h5>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("OtherServices", "Services")" style="text-decoration: none;">
+                <img src="~/image/khac.jpg" class="img-fluid" alt="Dịch Vụ Khác" style="width: 100%; height: auto;" />
+                <h3>Dịch Vụ Khác</h3>
+                <h5 style="color: black">Quý khách có nhu cầu khác? Miễn là liên quan đến đồng hồ thì chúng tôi đều có thể đảm nhận</h5>
+            </a>
+        </div>
+
+    </div>

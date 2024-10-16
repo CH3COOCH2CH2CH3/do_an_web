@@ -1,0 +1,36 @@
+﻿<!-- Views/Watches/Details.cshtml -->
+@model MyWatchStore.Models.Watch
+
+@{
+    ViewBag.Title = "Thông Tin Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="~/image/bán-đồng-hồ-rolex-giá-rẻ-1.jpg" class="img-fluid" alt="@Model.Tên" />
+    </div>
+    <div class="col-md-6">
+        <h2>@Model.Tên</h2>
+        <p>@Model.Thông_tin</p>
+        <h3 class="text-danger">@Model.Giá.ToString("C")</h3>
+        <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+        <div>   Hãng:        Rolex</div>
+        <div>   Mã SP:       52508 - 0008</div>
+        <div>  bộ máy:        Calibre 7140  </div>
+        <div> Kích thước      39mm  </div>
+        <div> Chất liệu dây: Vàng kim  </div>
+        <div> Chất liệu vỏ: Vàng kim  </div>
+
+
+    </div>
+
+    <h2> CHI TIẾT SẢN PHẨM </h2>
+    <h5>
+        Giới Thiệu Đồng hồ Rolex 1908 52508-0006 Mặt Số Trắng
+        Rolex 1908 M52508-0006 Mặt Số Trắng là một biểu tượng của sự tinh tế và thanh lịch trong bộ sưu tập đồng hồ của Rolex. Chiếc đồng hồ này mang trong mình phong cách cổ điển nhưng vẫn hiện đại, phù hợp cho những người yêu thích sự sang trọng và lịch lãm. </br> </br> Mặt số trắng trang nhã cùng với các chi tiết tỉ mỉ tạo nên một vẻ đẹp hoàn hảo, làm nổi bật phong cách của người đeo. Mặt số trắng của Rolex 1908 M52508-0006 được thiết kế tối giản nhưng không kém phần cuốn hút. Các cọc số và kim chỉ giờ được làm từ vàng trắng 18k, tạo nên sự tương phản rõ rệt và dễ dàng đọc giờ. Với kích thước mặt đồng hồ 39mm, Rolex 1908 M52508-0006 mang lại sự cân đối và thoải mái khi đeo trên cổ tay.</br></br>
+
+        Mặt số trắng của Rolex 1908 M52508-0006 được thiết kế tối giản nhưng không kém phần cuốn hút. Các cọc số và kim chỉ giờ được làm từ vàng trắng 18k, tạo nên sự tương phản rõ rệt và dễ dàng đọc giờ. Với kích thước mặt đồng hồ 39mm, Rolex 1908 M52508-0006 mang lại sự cân đối và thoải mái khi đeo trên cổ tay.
+    </h5>
+   <h2 style="text-align: center" > SẢN PHẨM LIÊN QUAN   </h2>
+
