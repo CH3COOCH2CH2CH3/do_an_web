@@ -1,0 +1,174 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.Header {
+    background-color: black;
+    color: White;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    .Header input[type="text"] {
+        width: 50%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+nav {
+    position: static;
+    background-color: transparent;
+    padding: 5px 10px 8px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    padding-right: 20px;
+    margin: 0;
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+    .menu > li {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        padding: 10px;
+        color: #333;
+    }
+
+.menucon:hover, .menucon a:hover {
+    color: #e63946;
+    border-bottom: 2px solid #ff8906;
+    padding-bottom: 8px;
+}
+
+
+.PhongCach {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 150px; /* Chiều rộng tối thiểu */
+}
+
+.menu > li:hover .PhongCach {
+    display: block;
+}
+
+.PhongCach li {
+    padding: 5px 12px;
+}
+
+    .PhongCach li a {
+        color: #333;
+    }
+
+        .PhongCach li a:hover {
+            background-color: transparent;
+            color: #e63946;
+            padding-bottom: 8px;
+        }
+
+
+.PhongCach li {
+    padding: 8px 12px;
+    white-space: nowrap; /* Ngăn ngừa ngắt dòng */
+}
+
+.PhongCach > li:hover .Khoanggia, .PhongCach > li:hover .Thuonghieu, .PhongCach > li:hover .Day, .PhongCach > li:hover .Swissmade, .PhongCach > li:hover .Dacbiet, .PhongCach > li:hover .Dacbiet2 {
+    display: block;
+}
+
+.Khoanggia > li, .Thuonghieu > li, .Day > li, .Swissmade > li, .Dacbiet > li {
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.Khoanggia, .Thuonghieu, .Day, .Swissmade, .Dacbiet {
+    display: none;
+    position: absolute;
+    top: -5%;
+    left: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 150px; /* Chiều rộng tối thiểu */
+}
+
+.Dacbiet2 {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 150px; /* Chiều rộng tối thiểu */
+}
+
+#menu2 {
+    padding-right: 20px;
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 8px;
+    padding-top: 2px;
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+.btn-login {
+    height: 50px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.btn-giohang {
+    height: 50px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+    .btn-giohang:hover, .btn-login:hover {
+        height: 50px;
+        width: 120px;
+        background-color: white;
+        color: black;
+        border-radius: 25px;
+        margin-left: 20px;
+        outline: none;
+    }
